@@ -1,4 +1,5 @@
-let btnDo = document.getElementById("btnDo");
+const buttons = document.querySelectorAll('button');
+
 
 let playNote = () => {
     let audio = document.getElementById('audDo');
@@ -7,4 +8,8 @@ let playNote = () => {
     audio.play();
 }
 
-btnDo.addEventListener("click", playNote);
+buttons.forEach((button) => {
+    button.addEventListener('click', playNote);
+});
+
+//btnDo.addEventListener("click", playNote);
