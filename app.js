@@ -14,3 +14,11 @@ let playNote = event => {
 buttons.forEach(
     button => button.addEventListener('click', playNote)
 );
+
+document.addEventListener('keydown', 
+    event => {
+        const key = event.key;
+        const button = document.querySelector(`button[data-key="${key}"]`);
+        if(button) button.click();
+    }
+);
