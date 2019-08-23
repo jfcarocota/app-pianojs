@@ -1,8 +1,11 @@
 const buttons = document.querySelectorAll('button');
 
-
-let playNote = () => {
-    let audio = document.getElementById('audDo');
+let playNote = (event) => {
+    console.log(event.target)
+    let button = event.target;
+    let note = button.dataset.note;
+    console.log(`audio${note}`);
+    let audio = document.getElementById(`audio${note}`);
     audio.pause();
     audio.currentTime = 0;
     audio.play();
@@ -11,5 +14,3 @@ let playNote = () => {
 buttons.forEach((button) => {
     button.addEventListener('click', playNote);
 });
-
-//btnDo.addEventListener("click", playNote);

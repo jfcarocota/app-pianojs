@@ -6,20 +6,31 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button id="btnDo">Do</button>
-        <button class="sharp">Do#</button>
-        <button>Re</button>
-        <button class="sharp">Re#</button>
-        <button>Mi</button>
-        <button>Fa</button>
-        <button class="sharp">Fa#</button>
-        <button>Sol</button>
-        <button class="sharp">Sol#</button>
-        <button>La</button>
-        <button class="sharp">La#</button>
-        <button>Si</button>
+        <button data-note="Do">Do</button>
+        <button data-note="DoSharp" class="sharp">Do#</button>
+        <button data-note="Re">Re</button>
+        <button data-note="ReSharp" class="sharp">Re#</button>
+        <button data-note="Mi">Mi</button>
+        <button data-note="Fa">Fa</button>
+        <button data-note="FaSharp" class="sharp">Fa#</button>
+        <button data-note="Sol">Sol</button>
+        <button data-note="SolSharp" class="sharp">Sol#</button>
+        <button data-note="La">La</button>
+        <button data-note="LaSharp" class="sharp">La#</button>
+        <button data-note="Si">Si</button>
         
-        <audio id="audDo" src="audio/piano_middle_C.mp3"></audio>
+        <audio src="audio/Do.mp3" id="audioDo"></audio>
+        <audio src="audio/DoSharp.mp3" id="audioDoSharp"></audio>
+        <audio src="audio/Re.mp3" id="audioRe"></audio>
+        <audio src="audio/ReSharp.mp3" id="audioReSharp"></audio>
+        <audio src="audio/Mi.mp3" id="audioMi"></audio>
+        <audio src="audio/Fa.mp3" id="audioFa"></audio>
+        <audio src="audio/FaSharp.mp3" id="audioFaSharp"></audio>
+        <audio src="audio/Sol.mp3" id="audioSol"></audio>
+        <audio src="audio/SolSharp.mp3" id="audioSolSharp"></audio>
+        <audio src="audio/La.mp3" id="audioLa"></audio>
+        <audio src="audio/LaSharp.mp3" id="audioLaSharp"></audio>
+        <audio src="audio/Si.mp3" id="audioSi"></audio>
 
         <script src="app.js"></script>
     </body>
